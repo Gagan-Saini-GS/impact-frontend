@@ -11,7 +11,7 @@ function InviteCard(props) {
 
   function acceptConnectionRequest() {
     console.log(user);
-    fetch("/acceptConnectionRequest", {
+    fetch("https://impact-backend-0p9n.onrender.com/acceptConnectionRequest", {
       method: "POST",
       body: JSON.stringify({
         user: user,
@@ -33,7 +33,7 @@ function InviteCard(props) {
 
   function ignoreConnectionRequest() {
     console.log(user.userName + " connection request ignored !!");
-    fetch("/ignoreConnectionRequest", {
+    fetch("https://impact-backend-0p9n.onrender.com/ignoreConnectionRequest", {
       method: "POST",
       body: JSON.stringify({
         user: user,

@@ -26,9 +26,6 @@ yarn-error.log*
 # TODO
 /TODO
 
-# Images
-/public/image
-
 # Temp files
 /src/postDetails.js
 

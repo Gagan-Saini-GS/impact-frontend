@@ -11,7 +11,7 @@ function Navbar(props) {
   function findUsers() {
     const searchedUserName = document.querySelector(".searched-input").value;
 
-    fetch("/findUser", {
+    fetch("https://impact-backend-0p9n.onrender.com/findUser", {
       method: "POST",
       body: JSON.stringify({
         username: searchedUserName,
@@ -39,7 +39,7 @@ function Navbar(props) {
 
   function getConnections() {
     // props.showConnections();
-    fetch("/showConnections", {
+    fetch("https://impact-backend-0p9n.onrender.com/showConnections", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -60,7 +60,7 @@ function Navbar(props) {
   }
 
   function getPendingRequests() {
-    fetch("/showPendingRequest", {
+    fetch("https://impact-backend-0p9n.onrender.com/showPendingRequest", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -80,7 +80,7 @@ function Navbar(props) {
   }
 
   function getInvitations() {
-    fetch("/showInvitations", {
+    fetch("https://impact-backend-0p9n.onrender.com/showInvitations", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {

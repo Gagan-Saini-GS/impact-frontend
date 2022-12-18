@@ -3,15 +3,12 @@ import CreatePost from "./CreatePost";
 
 function Feed(props) {
   useEffect(() => {
-    fetch("/getAllPosts")
+    fetch("https://impact-backend-0p9n.onrender.com/getAllPosts")
       .then((response) => response.json())
       .then((data) => {
-        // console.log(data);
         props.setPosts(data);
       });
   }, []);
-
-  // console.log(props.allPosts);
 
   return (
     <div className="feed-container">

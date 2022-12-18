@@ -13,7 +13,7 @@ function Login(props) {
     const password = document.querySelector(".signin-password").value;
 
     // console.log(userName, userEmail, password);
-    fetch("/signIn", {
+    fetch("https://impact-backend-0p9n.onrender.com/signIn", {
       method: "POST",
       body: JSON.stringify({
         userName: userName,
@@ -42,7 +42,7 @@ function Login(props) {
     const password = document.querySelector(".login-password").value;
 
     // console.log(userName, userEmail, password);
-    fetch("/login", {
+    fetch("https://impact-backend-0p9n.onrender.com/login", {
       method: "POST",
       body: JSON.stringify({
         userEmail: userEmail,
@@ -96,16 +96,7 @@ function Login(props) {
             </div>
             <Link to="/" className="login-button-link">
               <div className="login-form-item">
-                <button
-                  type="submit"
-                  onClick={login}
-                  // onSubmit={(event) => {
-                  //   event.preventDefault();
-                  //   // fetch("/login").then((data)=>{})
-                  //   // props.account();
-                  // }}
-                  className="login-btn"
-                >
+                <button type="submit" onClick={login} className="login-btn">
                   Login
                 </button>
               </div>

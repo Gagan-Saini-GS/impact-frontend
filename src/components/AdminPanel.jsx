@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 function AdminPanel() {
   const [data, setData] = useState("");
   useEffect(() => {
-    fetch("/admin-panel", {
+    fetch("https://impact-backend-0p9n.onrender.com/admin-panel", {
       method: "POST",
       body: JSON.stringify({
         role: "BASIC",

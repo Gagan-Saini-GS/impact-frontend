@@ -16,7 +16,7 @@ function Dashboard() {
   let [currentUser, setCurrentUser] = useState({});
 
   useEffect(() => {
-    fetch("/currentUser", {
+    fetch("https://impact-backend-0p9n.onrender.com/currentUser", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -33,7 +33,7 @@ function Dashboard() {
   }, []);
 
   useEffect(() => {
-    fetch("/accessActivities", {
+    fetch("https://impact-backend-0p9n.onrender.com/accessActivities", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -48,7 +48,7 @@ function Dashboard() {
   }, []);
 
   useEffect(() => {
-    fetch("/accessConnections", {
+    fetch("https://impact-backend-0p9n.onrender.com/accessConnections", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -64,7 +64,7 @@ function Dashboard() {
   }, []);
 
   useEffect(() => {
-    fetch("/accessAboutContent", {
+    fetch("https://impact-backend-0p9n.onrender.com/accessAboutContent", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -80,7 +80,7 @@ function Dashboard() {
   }, []);
 
   useEffect(() => {
-    fetch("/accessSkills", {
+    fetch("https://impact-backend-0p9n.onrender.com/accessSkills", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -96,7 +96,7 @@ function Dashboard() {
   }, []);
 
   useEffect(() => {
-    fetch("/accessNumOfConnections", {
+    fetch("https://impact-backend-0p9n.onrender.com/accessNumOfConnections", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -113,7 +113,7 @@ function Dashboard() {
   function updateAboutContent() {
     const aboutContent = document.querySelector(".about-input").value;
 
-    fetch("/updateAboutContent", {
+    fetch("https://impact-backend-0p9n.onrender.com/updateAboutContent", {
       method: "POST",
       body: JSON.stringify({
         userAboutContent: aboutContent,
@@ -138,7 +138,7 @@ function Dashboard() {
 
   function addSkill() {
     const skillInput = document.querySelector(".skill-input").value;
-    fetch("/addSkill", {
+    fetch("https://impact-backend-0p9n.onrender.com/addSkill", {
       method: "POST",
       body: JSON.stringify({
         skill: skillInput,
@@ -230,18 +230,21 @@ function Dashboard() {
               className="save-btn"
               onClick={() => {
                 const userIntro = document.querySelector(".user-intro").value;
-                fetch("/updateInformation", {
-                  method: "POST",
-                  body: JSON.stringify({
-                    userIntro: userIntro,
-                    userImg: imgSrc,
-                  }),
+                fetch(
+                  "https://impact-backend-0p9n.onrender.com/updateInformation",
+                  {
+                    method: "POST",
+                    body: JSON.stringify({
+                      userIntro: userIntro,
+                      userImg: imgSrc,
+                    }),
 
-                  headers: {
-                    "Content-type": "application/json; charset=UTF-8",
-                    accessToken: localStorage.getItem("accessToken"),
-                  },
-                })
+                    headers: {
+                      "Content-type": "application/json; charset=UTF-8",
+                      accessToken: localStorage.getItem("accessToken"),
+                    },
+                  }
+                )
                   .then((response) => response.json())
                   .then((data) => {
                     // setStatus(data.status);

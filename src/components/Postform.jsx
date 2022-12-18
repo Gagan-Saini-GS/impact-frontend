@@ -45,7 +45,7 @@ function Postform(props) {
 
     // console.log(postContent);
 
-    fetch("/postUpload", {
+    fetch("https://impact-backend-0p9n.onrender.com/postUpload", {
       method: "POST",
       body: JSON.stringify({
         postContent: postContent,

@@ -12,7 +12,7 @@ function CreatePost(props) {
   let [userEmail, setUserEmail] = useState("");
 
   function postComment(commentValue) {
-    fetch("/addComment", {
+    fetch("https://impact-backend-0p9n.onrender.com/addComment", {
       method: "POST",
       body: JSON.stringify({
         postSrc: props.postSrc,
@@ -35,7 +35,7 @@ function CreatePost(props) {
   }
 
   useEffect(() => {
-    fetch("/getLikes", {
+    fetch("https://impact-backend-0p9n.onrender.com/getLikes", {
       method: "POST",
       body: JSON.stringify({
         postSrc: props.postSrc,
@@ -82,7 +82,7 @@ function CreatePost(props) {
                 setLike(!isLiked);
                 event.target.style.color = "#fffaff";
 
-                fetch("/addLikes", {
+                fetch("https://impact-backend-0p9n.onrender.com/addLikes", {
                   // Adding method type
                   method: "POST",
 
@@ -122,7 +122,7 @@ function CreatePost(props) {
                 setLike(!isLiked);
                 event.target.style.color = "red";
 
-                fetch("/addLikes", {
+                fetch("https://impact-backend-0p9n.onrender.com/addLikes", {
                   // Adding method type
                   method: "POST",
 
@@ -176,7 +176,7 @@ function CreatePost(props) {
           <p
             onClick={() => {
               // console.log(showComments);
-              fetch("/getAllComments", {
+              fetch("https://impact-backend-0p9n.onrender.com/getAllComments", {
                 method: "POST",
                 body: JSON.stringify({
                   postSrc: props.postSrc,

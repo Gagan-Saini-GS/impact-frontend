@@ -68,7 +68,7 @@ function App() {
   function getUserDetails() {
     // console.log(JSON.parse(localStorage.getItem("accessToken")).accessToken);
     // console.log(accessToken);
-    fetch("/currentUser", {
+    fetch("https://impact-backend-0p9n.onrender.com/currentUser", {
       method: "POST",
       body: JSON.stringify({}),
       headers: {
@@ -114,26 +114,6 @@ function App() {
     connections = arr;
     // console.log(connections);
     setConnections(arr);
-
-    // fetch("/showConnections", {
-    //   method: "POST",
-    //   body: JSON.stringify({}),
-    //   headers: {
-    //     "Content-type": "application/json; charset=UTF-8",
-    //     accessToken: localStorage.getItem("accessToken"),
-    //   },
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     // console.log("Hello from api");
-    //     // console.log(data.x);
-    //     connections = data.x;
-    //     setConnections(data.x);
-    //     // props.showConnections(showConnections);
-    //   })
-    //   .catch((err) => {
-    //     console.log(err);
-    //   });
   }
 
   function showInvitations(arr) {
@@ -176,14 +156,8 @@ function App() {
   }
 
   function setPosts(data) {
-    // console.log("HELLO I AM CALLED!!");
     allPosts = data;
     setAllPosts(data);
-    // console.log(allPosts);
-
-    // allPosts.posts.map((item, index) => {
-    //   console.log(item);
-    // });
   }
 
   return (

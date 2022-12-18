@@ -13,7 +13,7 @@ function Founduser(props) {
 
     console.log(receiver);
 
-    fetch("/makeConnection", {
+    fetch("https://impact-backend-0p9n.onrender.com/makeConnection", {
       method: "POST",
       body: JSON.stringify({
         receiver: receiver,
