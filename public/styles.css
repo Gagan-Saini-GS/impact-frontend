@@ -787,7 +787,7 @@ textarea {
   justify-content: space-evenly;
   align-items: center;
   position: relative;
-  left: 32rem;
+  /* left: 32rem; */
 }
 
 .comment-input {
