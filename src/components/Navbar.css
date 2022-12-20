@@ -35,7 +35,8 @@
   display: flex;
   align-items: center;
   position: absolute;
-  right: 20px;
+  right: 70px;
+  width: 30%;
 }
 
 .shownav {
@@ -145,7 +146,7 @@
   font-weight: 700;
 }
 
-@media (min-width: 700px) and (max-width: 1400px) {
+@media (min-width: 700px) and (max-width: 1450px) {
   .expandIcon,
   .company-name,
   .menubar-list-item p {
@@ -161,6 +162,12 @@
     left: 7.5%;
     top: 0px;
     width: 92.5%;
+  }
+
+  .comment-section {
+    right: 20px;
+    width: 70%;
+    justify-content: flex-end;
   }
 
   .nav-container {
@@ -194,7 +201,7 @@
   }
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1450px) {
   .expandIcon {
     display: none;
   }
@@ -208,6 +215,12 @@
     position: relative;
     left: 16%;
     top: 0px;
+  }
+
+  .comment-section {
+    width: 90%;
+    right: 20px;
+    justify-content: flex-end;
   }
 
   .post-form {

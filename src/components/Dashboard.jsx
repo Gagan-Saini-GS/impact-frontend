@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import User from "./User";
 import Post from "./Post";
+import "./Dashboard.css";
 
 function Dashboard() {
   const [allPosts, setAllPosts] = useState([]);
@@ -193,7 +194,6 @@ function Dashboard() {
         <div className="user-details">
           <h4>{currentUser.userName}</h4>
           <h4>{currentUser.userIntro}</h4>
-          {/* <h4>{props.userDetails.userEmail}</h4> */}
         </div>
         <div className="followers">
           <h4>Connections</h4>
@@ -213,7 +213,6 @@ function Dashboard() {
             <h1>Edit your profile</h1>
             <textarea
               name="userIntro"
-              cols="90"
               rows="12"
               placeholder="User Intro"
               className="user-intro"

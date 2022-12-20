@@ -1,0 +1,148 @@
+/* COLORS */
+:root {
+  --pure-white: #f0f0f0;
+  --white: #eef3f8;
+  --dark-blue: #003f88;
+  --light-blue: #0a66c2;
+  --black: #172337;
+}
+
+/* Mobile View */
+
+.dashboard-container {
+  width: 100%;
+  position: absolute;
+  top: 50px;
+}
+
+.user-profile-container {
+  width: 100%;
+}
+
+.user-details {
+  margin-left: 8px;
+  margin-right: 0px;
+}
+
+.followers {
+  margin: 0px 8px;
+}
+
+.dashboard-detail {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.edit-section {
+  width: 80%;
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  margin: 0px 10%;
+}
+
+.edit-section .user-intro {
+  width: 100%;
+}
+
+.edit-section .save-btn {
+  width: 90%;
+  margin: 5px 5%;
+}
+
+.dashboard-item {
+  width: 90%;
+  margin: 20px auto;
+}
+
+.activity-container {
+  position: relative;
+  right: 0px;
+}
+
+.activity-container .post {
+  width: 100%;
+  margin: 5px auto;
+}
+
+.activity-container .post img {
+  width: 35%;
+  margin: 1rem 2rem;
+}
+
+.activity-container .post-description {
+  width: 100%;
+  margin: 1rem 0px;
+}
+
+/* Tab View */
+@media (min-width: 700px) and (max-width: 1450px) {
+  .dashboard-container {
+    width: 92.5%;
+    position: relative;
+    top: 0px;
+    background-color: var(--white);
+    color: var(--black);
+    left: 7.5%;
+  }
+
+  .edit-section {
+    position: absolute;
+    left: 0px;
+    top: 120px;
+  }
+
+  .dashboard-detail {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .dashboard-item {
+    width: 90%;
+    margin: 20px;
+    position: relative;
+  }
+}
+
+/* Laptop View */
+
+@media (min-width: 1450px) {
+  .dashboard-container {
+    width: 84%;
+    position: relative;
+    top: 0px;
+    left: 16%;
+    background-color: var(--white);
+    color: var(--black);
+  }
+
+  .dashboard-detail {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 0;
+  }
+
+  .dashboard-item {
+    width: 100%;
+    margin: 0px 20px;
+  }
+
+  .connections-container,
+  .skill-container {
+    width: 35%;
+  }
+
+  .activity-container {
+    overflow-y: scroll;
+    border: 2px solid rgb(49, 125, 247);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    position: relative;
+    right: 0px;
+  }
+}
