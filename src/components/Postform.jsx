@@ -65,6 +65,8 @@ function Postform(props) {
         setIsPost(false);
         setImgSrc("");
         setIsIMG(false);
+        document.querySelector(".post-form").style.display = "none";
+        document.querySelector(".bottom-navbar").style.display = "block";
       });
   }
 

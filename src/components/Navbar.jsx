@@ -238,7 +238,13 @@ function Navbar(props) {
             <Link to="/find-users">
               <li className="menubar-list-item">
                 <i className="fas fa-search" onClick={findUsers}></i>
-                <p>Search User</p>
+                {/* <p>Search User</p> */}
+                <input
+                  type="text"
+                  name="username"
+                  placeholder="Search users..."
+                  className="searched-input"
+                />
               </li>
             </Link>
           </ul>

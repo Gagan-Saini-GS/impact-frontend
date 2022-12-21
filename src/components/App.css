@@ -1,0 +1,68 @@
+.found-users-main-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 50px;
+}
+
+.found-users-container {
+  width: 100%;
+  border: none;
+}
+
+.user-details-container {
+  display: none;
+}
+
+.user-img {
+  width: 10%;
+  height: 10%;
+}
+
+.user-img img {
+  width: 50px;
+  height: 50px;
+}
+.user-info {
+  width: 90%;
+  margin-left: 10px;
+}
+
+.posted-comment {
+  width: 90%;
+  margin: 0.5rem auto;
+}
+
+.posted-comment .user-img img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 700px) and (max-width: 1450px) {
+  .found-users-main-container {
+    position: relative;
+    top: 0px;
+    left: 7.5%;
+    width: 92.5%;
+    height: 100vh;
+  }
+
+  .background-img-box {
+    display: none;
+  }
+
+  .found-user-container img {
+    position: relative;
+    top: 0px;
+    width: 40%;
+    margin-top: 100px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .found-users-main-container {
+    position: relative;
+    left: 16%;
+    height: 100vh;
+  }
+}

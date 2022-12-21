@@ -16,6 +16,8 @@ import {
   Navigate,
 } from "react-router-dom";
 import Streak from "./Streak";
+import Bottomnavbar from "./Bottomnavbar";
+import "./App.css";
 
 function App() {
   const [showFeed, setShowFeed] = useState(true);
@@ -160,6 +162,11 @@ function App() {
     setAllPosts(data);
   }
 
+  function showMakePost() {
+    document.querySelector(".post-form").style.display = "block";
+    document.querySelector(".bottom-navbar").style.display = "none";
+  }
+
   return (
     <Router>
       <div>
@@ -181,6 +188,8 @@ function App() {
               showPendingRequest={showPendingRequest}
               reportBug={reportBug}
             />
+
+            <Bottomnavbar showMakePost={showMakePost} />
             <Routes>
               <Route path="/" element={<Navigate to="/feed" />} />
               <Route
