@@ -1,0 +1,42 @@
+.box {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.invite-card {
+  width: 90%;
+  margin: 3% 5% 0px;
+}
+
+@media (min-width: 700px) and (max-width: 1450px) {
+  .box {
+    width: 92.5%;
+    flex-direction: row;
+    position: relative;
+    left: 7.5%;
+    top: 0px;
+  }
+
+  .invite-card {
+    width: 45%;
+    margin: 3% 2% 0px;
+  }
+}
+
+@media (min-width: 1450px) {
+  .box {
+    width: 84%;
+    top: 0px;
+    left: 16%;
+    flex-direction: row;
+  }
+
+  .invite-card {
+    width: 28.75%;
+    margin: 1% 2% 2%;
+  }
+}

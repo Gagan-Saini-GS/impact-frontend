@@ -325,7 +325,7 @@ function App() {
               <Route
                 path="/notifications"
                 element={
-                  <div>
+                  <div className="box">
                     <h1>Notifications Page</h1>
                   </div>
                 }

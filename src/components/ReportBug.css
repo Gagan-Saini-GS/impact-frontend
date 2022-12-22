@@ -1,0 +1,43 @@
+.report-bug-box {
+  width: 95%;
+  height: 100vh;
+  padding: 0px;
+  position: relative;
+  top: 50px;
+  padding-top: 10%;
+  padding-left: 5%;
+}
+
+.report-bug-box textarea {
+  width: 90%;
+}
+
+.report-bug-save-btn {
+  width: 30%;
+}
+
+@media (min-width: 700px) and (max-width: 1450px) {
+  .report-bug-box {
+    width: 92.5%;
+    left: 7.5%;
+    top: 0px;
+    padding: 5%;
+  }
+
+  .report-bug-save-btn {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1450px) {
+  .report-bug-box {
+    width: 84%;
+    left: 16%;
+    top: 0px;
+    padding: 5%;
+  }
+
+  .report-bug-save-btn {
+    width: 10%;
+  }
+}

@@ -3,14 +3,8 @@ import React from "react";
 function Streak() {
   return (
     <div className="streak-container">
-      <div className="streak-box">
-        <p className="streak-count">100</p>
-        <p className="streak-info">Current Streak</p>
-      </div>
-      <div className="streak-box">
-        <p className="streak-count">157</p>
-        <p className="streak-info">Longest Streak</p>
-      </div>
+      <h1>Streak Page is under development</h1>
+      <h2>Comming Soon...</h2>
     </div>
   );
 }

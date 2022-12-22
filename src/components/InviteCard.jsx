@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./InviteCard.css";
 
 function InviteCard(props) {
   const [status, setStatus] = useState("");
