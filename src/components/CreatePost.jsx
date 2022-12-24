@@ -76,7 +76,7 @@ function CreatePost(props) {
       />
       <div className="response-container">
         {isLiked ? (
-          <div>
+          <div className="like-icon">
             <i
               onClick={(event) => {
                 setLike(!isLiked);
@@ -116,7 +116,7 @@ function CreatePost(props) {
             </span>
           </div>
         ) : (
-          <div>
+          <div className="like-icon">
             <i
               onClick={(event) => {
                 setLike(!isLiked);

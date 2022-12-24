@@ -26,14 +26,22 @@
   align-items: center;
   padding: 0.5rem;
   height: 35px;
+  width: 100%;
+  padding: 1rem 0px;
+}
+
+.like-icon {
+  width: 6%;
+  padding-left: 3%;
 }
 
 .comment-section {
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  position: absolute;
-  right: 80px;
-  width: 30%;
+  position: relative;
+  right: 1%;
+  width: 90%;
 }
 
 .comment-input {
