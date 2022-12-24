@@ -36,6 +36,14 @@
   width: 30%;
 }
 
+.comment-input {
+  margin-right: 0px;
+}
+
+.post-comment-btn {
+  margin: 0px 5px;
+}
+
 .shownav {
   position: absolute;
   left: -200%;

@@ -87,7 +87,7 @@
   }
 
   .user-container {
-    width: 100%;
+    width: 96%;
   }
 
   .user-img {
@@ -112,10 +112,6 @@
     width: 84%;
     left: 16%;
     top: 0px;
-  }
-
-  .user-container {
-    width: 100%;
   }
 
   .user-img {
