@@ -796,7 +796,7 @@ textarea {
 
 .comment-input {
   padding: 5px;
-  margin-right: 1rem;
+  /* margin-right: 1rem; */
   border: 2px solid rgb(49, 125, 247);
   border: 2px solid var(--black);
   border-radius: 5px;
