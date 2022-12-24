@@ -27,7 +27,7 @@
 
 .user-info {
   width: 90%;
-  margin-left: 5px;
+  margin-left: 20px;
 }
 
 .posted-comment {
@@ -85,6 +85,20 @@
     top: 0px;
     left: 7.5%;
   }
+
+  .user-container {
+    width: 100%;
+  }
+
+  .user-img {
+    width: 8%;
+    margin: 0px;
+  }
+
+  .user-info {
+    width: 92%;
+    margin: 0px;
+  }
 }
 
 @media (min-width: 1450px) {
@@ -98,5 +112,19 @@
     width: 84%;
     left: 16%;
     top: 0px;
+  }
+
+  .user-container {
+    width: 100%;
+  }
+
+  .user-img {
+    width: 10%;
+    margin: 0px;
+  }
+
+  .user-info {
+    width: 100%;
+    margin: 0px;
   }
 }

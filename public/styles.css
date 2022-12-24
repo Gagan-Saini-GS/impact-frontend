@@ -1008,8 +1008,6 @@ textarea {
 }
 
 .report-bug-save-btn:hover {
-  /* background-color: #fffaff; */
-  /* color: #0f0c29; */
   border: 2px solid var(--white);
   background-color: var(--black);
   color: var(--white);
